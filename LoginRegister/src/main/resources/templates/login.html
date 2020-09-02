@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>登录</title>
+</head>
+<body>
+<div class="web_login">
+    <form name="form2" id="loginUser" accept-charset="utf-8"  action="/checklogin" method="post">
+        <ul class="reg_form" id="login-ul">
+            <div id="userCue" class="cue">登录界面</div>
+            <li>
+                <label for="username"  class="input-tips2">用户名：</label>
+                <div class="inputOuter2">
+                    <input type="text" id="username" name="username" maxlength="16" class="inputstyle2"/>
+                </div>
+            </li>
+            <li>
+                <label for="password" class="input-tips2">确认密码：</label>
+                <div class="inputOuter">
+                    <input type="password" id="password" name="password" maxlength="16" class="inputstyle2" />
+                </div>
+            </li>
+            <li>
+                <div class="inputArea">
+                    <input type="submit" id="login"  style="margin-top:10px;" class="button_blue" value="登录"/>
+                </div>
+            </li>
+        </ul>
+    </form>
+
+    <form name="form2" id="regUser" accept-charset="utf-8"  action="/register" method="post">
+        <ul class="reg_form" id="reg-ul">
+            <li>
+                <div class="inputArea">
+                    <input type="submit" id="reg"  style="margin-top:10px;" class="button_blue" value="进入注册" />
+                </div>
+            </li>
+        </ul>
+    </form>
+
+</div>
+</body>
+</html>
